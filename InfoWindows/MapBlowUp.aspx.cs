@@ -21,7 +21,7 @@ namespace Demos.InfoWindows
 
             GShowMapBlowUp mBlowUp = new GShowMapBlowUp(new GMarker(latlon), options);
 
-            GMap1.addShowMapBlowUp(mBlowUp);
+            GMap1.Add(mBlowUp);
         }
     }
 }

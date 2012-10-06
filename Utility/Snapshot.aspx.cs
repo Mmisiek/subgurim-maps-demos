@@ -12,7 +12,7 @@ namespace Demos.Utility
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.addGMarker(new GMarker(new GLatLng(40, 0)));
+            GMap1.Add(new GMarker(new GLatLng(40, 0)));
 
             SnapShotControl snapShotControl = new SnapShotControl();
             //snapShotControl.buttonLabelHtml = "Take a photo!"; 
@@ -24,7 +24,7 @@ namespace Demos.Utility
             //snapShotControl.usePolylineEncode = true; 
 
 
-            GMap1.addControl(new GControl(snapShotControl));
+            GMap1.Add(new GControl(snapShotControl));
         }
     }
 }

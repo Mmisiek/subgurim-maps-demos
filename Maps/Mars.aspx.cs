@@ -12,7 +12,7 @@ namespace Demos.Maps
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMarsMap1.addControl(new GControl(GControl.preBuilt.MapTypeControl));
+            GMarsMap1.Add(new GControl(GControl.preBuilt.MapTypeControl));
         }
     }
 }

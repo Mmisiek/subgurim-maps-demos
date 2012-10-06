@@ -12,7 +12,7 @@ namespace Demos.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.addMapType(GMapType.GTypes.Physical);
+            GMap1.Add(GMapType.GTypes.Physical);
 
             GHierarchicalMapTypeControl hierarchicalMapTypeControl = new GHierarchicalMapTypeControl();
 

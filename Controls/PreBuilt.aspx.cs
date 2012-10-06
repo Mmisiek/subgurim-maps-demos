@@ -12,12 +12,12 @@ namespace Demos.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GControl control = new GControl(GControl.preBuilt.LargeMapControl3D);
+            GControl control = new GControl(GControl.preBuilt.LargeMapControl);
             GControl control2 = new GControl(GControl.preBuilt.MenuMapTypeControl, new GControlPosition(GControlPosition.position.Top_Right));
 
-            GMap1.addControl(control);
-            GMap1.addControl(control2);
-            GMap1.addControl(new GControl(GControl.preBuilt.NavLabelControl, new GControlPosition(GControlPosition.position.Bottom_Left))); 
+            GMap1.Add(control);
+            GMap1.Add(control2);
+            GMap1.Add(new GControl(GControl.preBuilt.NavLabelControl, new GControlPosition(GControlPosition.position.Bottom_Left))); 
         }
     }
 }

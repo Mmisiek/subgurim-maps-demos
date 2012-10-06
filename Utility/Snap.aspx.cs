@@ -24,11 +24,11 @@ namespace Demos.Utility
             points.Add(latlng + new GLatLng(3.5, -4));
             points.Add(latlng + new GLatLng(4.79, +2.6));
             GPolyline line = new GPolyline(points, "FF0000", 2);
-            GMap1.addPolyline(line);
+            GMap1.Add(line);
 
 
             GMarker marker = new GMarker(latlng);
-            GMap1.addGMarker(marker);
+            GMap1.Add(marker);
 
 
             GInfoWindowOptions options = new GInfoWindowOptions();
@@ -39,9 +39,9 @@ namespace Demos.Utility
 
             GListener listener = new GListener(GMap1.GMap_Id, GListener.Event.click, string.Format(@"function(){{{0};}}", mBlowUp.ToString(GMap1.GMap_Id)));
 
-            GMap1.addListener(listener);
+            GMap1.Add(listener);
 
-            GMap1.addSnapToRoute(new SnapToToute(marker, line));
+            GMap1.Add(new SnapToToute(marker, line));
         }
     }
 }

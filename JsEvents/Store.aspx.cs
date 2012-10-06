@@ -23,7 +23,7 @@ namespace Demos.JsEvents
         {
             if (!Page.IsPostBack)
             {
-                GMap2.addListener(new GListener(GMap2.GMap_Id, GListener.Event.zoomend,
+                GMap2.Add(new GListener(GMap2.GMap_Id, GListener.Event.zoomend,
                 string.Format(@"   
                     function(oldZoom, newZoom) 
                     {{ 
@@ -32,7 +32,7 @@ namespace Demos.JsEvents
                     }}             
                     ", GMap2.GMap_Id)));
 
-                GMap2.addControl(new GControl(GControl.preBuilt.SmallZoomControl));
+                GMap2.Add(new GControl(GControl.preBuilt.SmallZoomControl));
             }
 
             GMap1.Store.Add(i.ToString(), DateTime.Now.ToString()); 

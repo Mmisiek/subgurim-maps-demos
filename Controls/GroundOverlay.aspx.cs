@@ -19,7 +19,7 @@ namespace Demos.Controls
 
             GGroundOverlay groundOverlay = new GGroundOverlay("http://googlemaps.subgurim.net/images/logo.jpg", new GLatLngBounds(sw, ne));
 
-            GMap1.addGroundOverlay(groundOverlay);
+            GMap1.Add(groundOverlay);
         }
     }
 }

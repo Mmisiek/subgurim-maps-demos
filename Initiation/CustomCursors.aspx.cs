@@ -13,7 +13,7 @@ namespace Demos.Initiation
         protected void Page_Load(object sender, EventArgs e)
         {
             GCustomCursor customCursor = new GCustomCursor(cursor.crosshair, cursor.text);
-            GMap1.addCustomCursor(customCursor);
+            GMap1.Add(customCursor);
         }
     }
 }

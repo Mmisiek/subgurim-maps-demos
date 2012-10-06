@@ -15,10 +15,10 @@ namespace Demos.Initiation
             GMap1.setCenter(new GLatLng(40, 1));
             GMap2.setCenter(new GLatLng(39, 2));
 
-            GMap1.addControl(new GControl(GControl.extraBuilt.TextualCoordinatesControl));
-            GMap1.addControl(new GControl(GControl.extraBuilt.MarkCenter));
-            GMap2.addControl(new GControl(GControl.extraBuilt.TextualCoordinatesControl));
-            GMap2.addControl(new GControl(GControl.extraBuilt.MarkCenter));
+            GMap1.Add(new GControl(GControl.extraBuilt.TextualCoordinatesControl));
+            GMap1.Add(new GControl(GControl.extraBuilt.MarkCenter));
+            GMap2.Add(new GControl(GControl.extraBuilt.TextualCoordinatesControl));
+            GMap2.Add(new GControl(GControl.extraBuilt.MarkCenter));
 
             TabPanel1.OnClientClick = GMap1.getChangeHiddenStateFunction();
             TabPanel3.OnClientClick = GMap2.getChangeHiddenStateFunction();

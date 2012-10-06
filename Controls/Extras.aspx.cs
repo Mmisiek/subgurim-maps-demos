@@ -13,10 +13,10 @@ namespace Demos.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             GControl control = new GControl(GControl.extraBuilt.NumericalZoomControl);
-            GMap1.addControl(control);
+            GMap1.Add(control);
 
-            GMap1.addControl(new GControl(GControl.extraBuilt.TextualCoordinatesControl, new GControlPosition(GControlPosition.position.Top_Right)));
-            GMap1.addControl(new GControl(GControl.extraBuilt.TextualOnClickCoordinatesControl, new GControlPosition(GControlPosition.position.Bottom_Right)));
+            GMap1.Add(new GControl(GControl.extraBuilt.TextualCoordinatesControl, new GControlPosition(GControlPosition.position.Top_Right)));
+            GMap1.Add(new GControl(GControl.extraBuilt.TextualOnClickCoordinatesControl, new GControlPosition(GControlPosition.position.Bottom_Right)));
         }
     }
 }

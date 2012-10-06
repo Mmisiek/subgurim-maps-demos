@@ -21,7 +21,7 @@ namespace Demos.Geo
 
         private void arreglarMapa()
         {
-            GMap1.addControl(new GControl(GControl.preBuilt.LargeMapControl));
+            GMap1.Add(new GControl(GControl.preBuilt.LargeMapControl));
             GMap1.enableHookMouseWheelToZoom = true;
 
             StringBuilder sb = new StringBuilder();
@@ -31,7 +31,7 @@ namespace Demos.Geo
             sb.Append(window.ToString(GMap1.GMap_Id));
             sb.Append("}");
 
-            GMap1.addListener(new GListener(GMap1.GMap_Id, GListener.Event.click, sb.ToString()));
+            GMap1.Add(new GListener(GMap1.GMap_Id, GListener.Event.click, sb.ToString()));
 
             StringBuilder sb2 = new StringBuilder();
             sb2.Append("function goTo(point){");
@@ -42,7 +42,7 @@ namespace Demos.Geo
             GMarker marker = new GMarker(point);
             sb2.Append(marker.ToString(GMap1.GMap_Id));
             sb2.Append("}");
-            GMap1.addCustomJavascript(sb2.ToString());
+            GMap1.Add(sb2.ToString());
         }
 
         protected string GMap1_Click(object s, GAjaxServerEventArgs e)

@@ -23,12 +23,12 @@ namespace Demos.Icons
             XPinIcon xPinIcon = new XPinIcon(PinShapes.pin, PinIcons.home, Color.LightGreen, Color.BlueViolet);
             SPin sPin = new SPin(0.5, -10, Color.Green, 8, PinFontStyle.normal, "C");
 
-            GMap1.addGMarker(new GMarker(latlng, new GMarkerOptions(new GIcon(pinLetter.ToString(), pinLetter.Shadow()))));
-            GMap1.addGMarker(new GMarker(latlng + new GLatLng(2, 2), new GMarkerOptions(new GIcon(xPinLetter.ToString(), xPinLetter.Shadow()))));
-            GMap1.addGMarker(new GMarker(latlng + new GLatLng(2, -2), new GMarkerOptions(new GIcon(pinIcon.ToString(), pinIcon.Shadow()))));
-            GMap1.addGMarker(new GMarker(latlng + new GLatLng(-2, 2), new GMarkerOptions(new GIcon(xPinIcon.ToString(), xPinIcon.Shadow()))));
+            GMap1.Add(new GMarker(latlng, new GMarkerOptions(new GIcon(pinLetter.ToString(), pinLetter.Shadow()))));
+            GMap1.Add(new GMarker(latlng + new GLatLng(2, 2), new GMarkerOptions(new GIcon(xPinLetter.ToString(), xPinLetter.Shadow()))));
+            GMap1.Add(new GMarker(latlng + new GLatLng(2, -2), new GMarkerOptions(new GIcon(pinIcon.ToString(), pinIcon.Shadow()))));
+            GMap1.Add(new GMarker(latlng + new GLatLng(-2, 2), new GMarkerOptions(new GIcon(xPinIcon.ToString(), xPinIcon.Shadow()))));
 
-            GMap1.addGMarker(new GMarker(latlng + new GLatLng(-2, -2), new GMarkerOptions(new GIcon(sPin.ToString()))));
+            GMap1.Add(new GMarker(latlng + new GLatLng(-2, -2), new GMarkerOptions(new GIcon(sPin.ToString()))));
         }
     }
 }

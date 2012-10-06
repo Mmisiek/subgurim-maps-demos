@@ -13,10 +13,10 @@ namespace Demos.Utility
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.addGMapUI(new GMapUI());
+            GMap1.Add(new GMapUI());
             GMap1.GZoom = 2;
 
-            GMap2.addGMapUI(new GMapUI());
+            GMap2.Add(new GMapUI());
             GMap2.GZoom = 2;
 
             List<GMarker> markers = new List<GMarker>();

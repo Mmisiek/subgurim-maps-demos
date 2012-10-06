@@ -11,7 +11,7 @@ namespace Demos.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.addGMapUI(new GMapUI());
+            GMap1.Add(new GMapUI());
 
             GMapUIOptions options = new GMapUIOptions();
             options.maptypes_hybrid = false;

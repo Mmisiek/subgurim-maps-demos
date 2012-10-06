@@ -18,7 +18,7 @@ namespace Demos.InfoWindows
             GMarker icono = new GMarker(latlon);
 
             GInfoWindow window = new GInfoWindow(icono, "Ejemplo de <b>infoWindow</b>", false, GListener.Event.mouseover);
-            GMap1.addInfoWindow(window);
+            GMap1.Add(window);
 
             GPolygon polygon = new GPolygon();
             polygon.points.Add(new GLatLng(9, 25));
@@ -36,7 +36,7 @@ namespace Demos.InfoWindows
 
             window2.opened = true;
             window2.sourceEvent = GListener.Event.click;
-            GMap1.addInfoWindow(window2);
+            GMap1.Add(window2);
         }
     }
 }

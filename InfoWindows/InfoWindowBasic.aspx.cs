@@ -16,7 +16,7 @@ namespace Demos.InfoWindows
             GMap1.setCenter(latlon, 4);
 
             GInfoWindow window = new GInfoWindow(latlon, "Ejemplo de <b>infoWindow</b>");
-            GMap1.addInfoWindow(window);
+            GMap1.Add(window);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Demos.JsEvents
         {
             if (!Page.IsPostBack)
             {
-                GMap1.addListener(new GListener(GMap1.GMap_Id, GListener.Event.click,
+                GMap1.Add(new GListener(GMap1.GMap_Id, GListener.Event.click,
                  string.Format(@"
                function(event)
                {{

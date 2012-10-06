@@ -12,7 +12,7 @@ namespace Demos.Maps
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMoonMap1.addControl(new GControl(GControl.preBuilt.MapTypeControl));
+            GMoonMap1.Add(new GControl(GControl.preBuilt.MapTypeControl));
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Demos.InfoWindows
             GInfoWindowOptions options1 = new GInfoWindowOptions();
             options1.onCloseFn = "function(){alert('Thanks! You have closed me ;D')}";
             window.options = options1;
-            GMap1.addInfoWindow(window);
+            GMap1.Add(window);
         }
     }
 }

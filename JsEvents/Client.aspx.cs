@@ -18,9 +18,9 @@ namespace Demos.JsEvents
             GMarkerOptions mOpts = new GMarkerOptions();
             mOpts.draggable = true;
             GMarker marker = new GMarker(latlng, mOpts);
-            GMap1.addGMarker(marker);
+            GMap1.Add(marker);
             GListener listener = new GListener(marker.ID, GListener.Event.dragend, "alertame");
-            GMap1.addListener(listener);
+            GMap1.Add(listener);
 
             GMarker mkr = new GMarker();
             mkr.options = mOpts;
@@ -34,9 +34,9 @@ namespace Demos.JsEvents
             sb.Append("}");
 
             GListener listener2 = new GListener(GMap1.GMap_Id, GListener.Event.click, sb.ToString());
-            GMap1.addListener(listener2);
+            GMap1.Add(listener2);
 
-            GMap1.addListener(new GListener(GMap1.GMap_Id, GListener.Event.moveend, "function() {alert('I Love Elvis :9P');}"));
+            GMap1.Add(new GListener(GMap1.GMap_Id, GListener.Event.moveend, "function() {alert('I Love Elvis :9P');}"));
 
             GPolygon polygon = new GPolygon();
             polygon.Add(latlng + new GLatLng(1, 1));
@@ -46,7 +46,7 @@ namespace Demos.JsEvents
             GMap1.Add(polygon);
 
             GListener listener3 = new GListener(polygon.PolygonID, GListener.Event.click, "function(mouseEvent) {alert('Polygon clicked');}");
-            GMap1.addListener(listener3);
+            GMap1.Add(listener3);
         }
     }
 }

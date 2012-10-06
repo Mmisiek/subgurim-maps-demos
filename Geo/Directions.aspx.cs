@@ -14,7 +14,7 @@ namespace Demos.Geo
         {
             GDirection gdirection = new GDirection(true);
             gdirection.errorMessage = "Ups";
-            GMap1.addGDirection(gdirection);
+            GMap1.Add(gdirection);
         }
     }
 }

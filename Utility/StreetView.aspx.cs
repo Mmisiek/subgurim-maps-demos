@@ -25,7 +25,7 @@ namespace Demos.Utility
             GMarker marker = new GMarker(new GLatLng(35.014975, 135.782479));
             extStreetViewControl.marker = marker;
 
-            GMap1.addControl(new GControl(extStreetViewControl));
+            GMap1.Add(new GControl(extStreetViewControl));
         }
     }
 }

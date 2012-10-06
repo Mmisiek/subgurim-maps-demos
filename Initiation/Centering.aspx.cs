@@ -17,7 +17,7 @@ namespace Demos.Initiation
             //GMap1.setCenter(latlong, 4);
             GMap1.setCenter(latlong, 4, maptype);
 
-            GMap1.addControl(new GControl(GControl.extraBuilt.TextualCoordinatesControl));
+            GMap1.Add(new GControl(GControl.extraBuilt.TextualCoordinatesControl));
         }
     }
 }

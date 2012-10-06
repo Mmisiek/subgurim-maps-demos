@@ -39,7 +39,7 @@ namespace Demos.Utility
 
             contextMenuControl.addressText = "Dirección";
 
-            GMap1.addControl(new GControl(contextMenuControl));
+            GMap1.Add(new GControl(contextMenuControl));
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Demos.Others
         {
             GAdsManagerOptions options = new GAdsManagerOptions(1, 30);
             options.style = GAdsManagerOptions.GAdsManagerStyleEnum.adunit;
-            GMap1.addAdsManager(new GAdsManager("YourPublisherID", GAdsManager.HelpSubgurimEnum.FullHelp, options));
+            GMap1.Add(new GAdsManager("YourPublisherID", GAdsManager.HelpSubgurimEnum.FullHelp, options));
         }
     }
 }

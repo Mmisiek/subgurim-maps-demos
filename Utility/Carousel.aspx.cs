@@ -12,7 +12,7 @@ namespace Demos.Utility
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.addControl(new GControl(new CarouselMapTypeControl()));
+            GMap1.Add(new GControl(new CarouselMapTypeControl()));
         }
     }
 }

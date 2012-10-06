@@ -23,7 +23,7 @@ namespace Demos.Controls
             puntos.Add(latlng + new GLatLng(3.5, -4));
             puntos.Add(latlng + new GLatLng(4.79, +2.6));
             GPolyline linea = new GPolyline(puntos, "FF0000", 2);
-            GMap1.addPolyline(linea);
+            GMap1.Add(linea);
 
             List<GLatLng> puntos2 = new List<GLatLng>();
             puntos2.Add(latlng + new GLatLng(5, -8));
@@ -33,14 +33,14 @@ namespace Demos.Controls
             puntos2.Add(latlng + new GLatLng(-5, 0));
             GPolyline linea2 = new GPolyline(puntos2);
             linea2.weight = 4;
-            GMap1.addPolyline(linea2);
+            GMap1.Add(linea2);
 
             List<GLatLng> puntos3 = new List<GLatLng>();
             puntos3.Add(latlng + new GLatLng(5, -20));
             puntos3.Add(latlng + new GLatLng(5, 20));
             GPolyline linea3 = new GPolyline(puntos3, Color.DarkViolet, 4);
             linea3.geodesic = true;
-            GMap1.addPolyline(linea3);
+            GMap1.Add(linea3);
         }
     }
 }

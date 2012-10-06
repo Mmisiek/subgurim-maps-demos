@@ -13,8 +13,8 @@ namespace Demos.Initiation
         {
             GMap1.setCenter(new GLatLng(37.339085, -121.8914807), 18);
             GMap1.mapType = GMapType.GTypes.Hybrid;
-            GMap1.addMapType(GMapType.GTypes.Physical);
-            GMap1.addControl(new GControl(GControl.preBuilt.MapTypeControl));
+            GMap1.Add(GMapType.GTypes.Physical);
+            GMap1.Add(new GControl(GControl.preBuilt.MapTypeControl));
             GMap1.enableRotation = true;
         }
     }

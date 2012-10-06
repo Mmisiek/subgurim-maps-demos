@@ -16,7 +16,7 @@ namespace Demos.Geo
             // GMap1.addGeoCode(new GeoCoding());
 
             GMap1.GZoom = 9;
-            GMap1.addControl(new GControl(GControl.preBuilt.LargeMapControl));
+            GMap1.Add(new GControl(GControl.preBuilt.LargeMapControl));
 
             GeoCoding geoCoding = new GeoCoding();
             
@@ -26,7 +26,7 @@ namespace Demos.Geo
             geoCoding.buttonText = "Buscar";
             geoCoding.infoText = "Buscar GeoCode";
 
-            GMap1.addGeoCode(geoCoding);
+            GMap1.Add(geoCoding);
         }
     }
 }

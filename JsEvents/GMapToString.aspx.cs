@@ -36,13 +36,13 @@ namespace Demos.JsEvents
                 points.Add(e.center);
                 points.Add(e.point);
 
-                gmap.addPolyline(new GPolyline(points, Color.Yellow));
+                gmap.Add(new GPolyline(points, Color.Yellow));
             }
 
             // Controls
-            gmap.addControl(new GControl(GControl.extraBuilt.MarkCenter));
-            gmap.addControl(new GControl(GControl.preBuilt.LargeMapControl));
-            gmap.addControl(new GControl(GControl.preBuilt.MapTypeControl));
+            gmap.Add(new GControl(GControl.extraBuilt.MarkCenter));
+            gmap.Add(new GControl(GControl.preBuilt.LargeMapControl));
+            gmap.Add(new GControl(GControl.preBuilt.MapTypeControl));
 
             // Maybe... anything? ;)
             gmap.enableHookMouseWheelToZoom = false;

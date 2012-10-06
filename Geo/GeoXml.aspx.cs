@@ -13,8 +13,8 @@ namespace Demos.Geo
         protected void Page_Load(object sender, EventArgs e)
         {
             GMap1.setCenter(new GLatLng(49.496675, -102.65625), 3);
-            GMap1.addGGeoXML(new GGeoXml("http://nigel.tao.googlepages.com/blackbirds.kml"));
-            GMap1.addGGeoXML(new GGeoXml("http://api.flickr.com/services/feeds/groups_pool.gne?id=322338@N20&format=rss_200&georss=1"));
+            GMap1.Add(new GGeoXml("http://nigel.tao.googlepages.com/blackbirds.kml"));
+            GMap1.Add(new GGeoXml("http://api.flickr.com/services/feeds/groups_pool.gne?id=322338@N20&format=rss_200&georss=1"));
         }
     }
 }

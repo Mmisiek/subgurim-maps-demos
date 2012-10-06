@@ -13,17 +13,17 @@ namespace Demos.Others
         protected void Page_Load(object sender, EventArgs e)
         {
             GMove move = new GMove(500, 1, -1);
-            GMap1.addMovement(move);
+            GMap1.Add(move);
 
             GMove move2 = new GMove();
             move2.deltaMiliseconds = 2500;
             move2.goTo = new GLatLng(51, 44);
 
-            GMap1.addMovement(move2);
+            GMap1.Add(move2);
 
-            GMap1.addMovement(new GMove(2500, new GLatLng(51, 20)));
+            GMap1.Add(new GMove(2500, new GLatLng(51, 20)));
 
-            GMap1.addMovement(new GMove(1500, 2, 3));
+            GMap1.Add(new GMove(1500, 2, 3));
         }
     }
 }

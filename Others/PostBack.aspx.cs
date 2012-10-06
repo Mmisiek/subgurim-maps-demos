@@ -12,8 +12,8 @@ namespace Demos.Others
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.addControl(new GControl(GControl.preBuilt.LargeMapControl));
-            GMap1.addControl(new GControl(GControl.preBuilt.MapTypeControl));
+            GMap1.Add(new GControl(GControl.preBuilt.LargeMapControl));
+            GMap1.Add(new GControl(GControl.preBuilt.MapTypeControl));
 
             GLatLng latlng = new GLatLng(42.12, -1.145);
 
@@ -22,7 +22,7 @@ namespace Demos.Others
                 GMap1.setCenter(latlng, 5, GMapType.GTypes.Hybrid);
             }
 
-            GMap1.addGMarker(new GMarker(latlng + new GLatLng(2, 1)));
+            GMap1.Add(new GMarker(latlng + new GLatLng(2, 1)));
         }
     }
 }

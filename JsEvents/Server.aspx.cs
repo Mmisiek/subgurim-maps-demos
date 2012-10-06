@@ -14,8 +14,8 @@ namespace Demos.JsEvents
         {
             if (!Page.IsPostBack)
             {
-                GMap1.addControl(new GControl(GControl.preBuilt.LargeMapControl));
-                GMap1.addControl(new GControl(GControl.preBuilt.MapTypeControl));
+                GMap1.Add(new GControl(GControl.preBuilt.LargeMapControl));
+                GMap1.Add(new GControl(GControl.preBuilt.MapTypeControl));
             }
         }
 

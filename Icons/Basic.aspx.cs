@@ -16,18 +16,18 @@ namespace Demos.Icons
             GMap1.setCenter(latlng, 5, GMapType.GTypes.Hybrid);
 
             GMarker marker = new GMarker(latlng);
-            GInfoWindowOptions IWoptions = new GInfoWindowOptions(12, GMapType.GTypes.Normal);
+            GInfoWindowOptions windowOptions = new GInfoWindowOptions(12, GMapType.GTypes.Normal);
             //GShowMapBlowUp mbUp = new GShowMapBlowUp(marker, false, IWoptions);
             //GMap1.addShowMapBlowUp(mbUp);
-            GInfoWindow mbUp = new GInfoWindow(marker, "I'm an infoWindow", IWoptions);
-            GMap1.addInfoWindow(mbUp);
+            GInfoWindow mbUp = new GInfoWindow(marker, "I'm an infoWindow", windowOptions);
+            GMap1.Add(mbUp);
 
-            GMap1.addGMarker(new GMarker(latlng + new GLatLng(2, 1)));
+            GMap1.Add(new GMarker(latlng + new GLatLng(2, 1)));
 
             GMarkerOptions markerOptions = new GMarkerOptions();
             markerOptions.clickable = false;
             GMarker marker2 = new GMarker(latlng + new GLatLng(-1, 2.5), markerOptions);
-            GMap1.addGMarker(marker2);
+            GMap1.Add(marker2);
 
             GMarker markerDraggable = new GMarker(latlng + new GLatLng(-2, -1));
             GMarkerOptions mOpts = new GMarkerOptions();
@@ -39,7 +39,7 @@ namespace Demos.Icons
             string jsEnd = "function() { myInfoWindow = new google.maps.InfoWindow({ content: '<a href=\"http://www.playsudoku.biz\" target=\"_blank\">Play Sudoku</a>' }); myInfoWindow.open(" + GMap1.GMap_Id + "," + markerDraggable.ID + "); }";
             GMap1.Add(new GListener(markerDraggable.ID, GListener.Event.dragstart, jsStart));
             GMap1.Add(new GListener(markerDraggable.ID, GListener.Event.dragend, jsEnd));
-            GMap1.addGMarker(markerDraggable);
+            GMap1.Add(markerDraggable);
         }
     }
 }

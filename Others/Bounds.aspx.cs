@@ -16,8 +16,8 @@ namespace Demos.Others
             GLatLng ne = sw + new GLatLng(5, -10.2);
             GLatLngBounds latlngbounds = new GLatLngBounds(sw, ne);
 
-            GMap1.addGMarker(new GMarker(latlngbounds.getNorthEast()));
-            GMap1.addGMarker(new GMarker(latlngbounds.getSouthWest()));
+            GMap1.Add(new GMarker(latlngbounds.getNorthEast()));
+            GMap1.Add(new GMarker(latlngbounds.getSouthWest()));
 
             GMap1.GZoom = GMap1.getBoundsZoomLevel(latlngbounds);
             GMap1.setCenter(latlngbounds.getCenter());
@@ -35,7 +35,7 @@ namespace Demos.Others
 
             bool isInside = latlngbounds.contains(inside);
             bool isOutSide = !latlngbounds.contains(outside);
-            bool intersect = latlngbounds.insersects(latlngbounds2);
+            bool intersect = latlngbounds.intersects(latlngbounds2);
             bool contains = latlngboundsBig.containsBounds(latlngbounds); 
         }
     }

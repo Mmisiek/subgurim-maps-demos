@@ -19,10 +19,10 @@ namespace Demos.Controls
                                                };
 
             GLayer layerWeather = new GLayer(GLayerType.Weather, options);
-            GMap1.addGLayer(layerWeather);
+            GMap1.Add(layerWeather);
 
             GLayer layerPanoramio = new GLayer(GLayerType.Panoramio);
-            GMap2.addGLayer(layerPanoramio);
+            GMap2.Add(layerPanoramio);
 
             //GLayer layerClouds = new GLayer(GLayerType.Clouds);
             //GMap2.Add(layerClouds);

@@ -29,7 +29,7 @@ namespace Demos.Icons
             mOpts.icon = icon;
 
             GMarker marker = new GMarker(latlng, mOpts);
-            GMap1.addGMarker(marker);
+            GMap1.Add(marker);
         }
     }
 }

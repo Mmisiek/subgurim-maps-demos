@@ -27,7 +27,7 @@ namespace Demos.InfoWindows
             }
 
             iwTabs.tabs = tabs;
-            GMap1.addInfoWindowTabs(iwTabs);
+            GMap1.Add(iwTabs);
 
             /****** INFOWINDOWTAB 2 ******/
 
@@ -37,7 +37,7 @@ namespace Demos.InfoWindows
 
             iwTabs2.gMarker = icono;
             iwTabs2.tabs = tabs;
-            GMap1.addInfoWindowTabs(iwTabs2);
+            GMap1.Add(iwTabs2);
         }
     }
 }

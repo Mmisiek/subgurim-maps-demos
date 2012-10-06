@@ -24,7 +24,7 @@ namespace Demos.Utility
             infoWindowTabbedMaxContent.minHtml = "min HTML";
             infoWindowTabbedMaxContent.summaryHtml = "summary <b>HTML</b>";
 
-            GMap1.addInfoWindowTabbedMaxContent(infoWindowTabbedMaxContent);
+            GMap1.Add(infoWindowTabbedMaxContent);
         }
     }
 }

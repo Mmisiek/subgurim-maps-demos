@@ -18,7 +18,7 @@ namespace Demos.JsEvents
             GMap1.setCenter(center, 8);
 
             //GMap1.Add("addRandom();", true);
-            GMap1.addCustomInsideJavascript("addRandom();");
+            GMap1.Add("addRandom();", true);
 
             sb.Append("var max = 10;");
             sb.Append("function addRandom()");

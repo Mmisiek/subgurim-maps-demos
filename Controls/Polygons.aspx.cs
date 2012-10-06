@@ -32,11 +32,11 @@ namespace Demos.Controls
             puntos2.Add(latlng);
             puntos2.Add(latlng + new GLatLng(-5, 0));
             GPolygon poligono2 = new GPolygon(puntos2, "000000", 3, 1, "654321", 1);
-            GMap1.addPolygon(poligono2);
+            GMap1.Add(poligono2);
 
             GPolygon poligono3 = new GPolygon(new List<GLatLng>(), "00ff00", 3, 1, "ff0044", 1);
             poligono3.createPolygon(latlng + new GLatLng(-6, -7.5), 7, 4, Math.PI / 3);
-            GMap1.addPolygon(poligono3);
+            GMap1.Add(poligono3);
         }
     }
 }

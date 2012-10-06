@@ -24,7 +24,7 @@ namespace Demos.Utility
             //keyDragZoom.VisualTips = "{on: 'Turn on', off: 'Turn off'}";
 
 
-            GMap1.addKeyDragZoom(keyDragZoom);
+            GMap1.Add(keyDragZoom);
         }
     }
 }
