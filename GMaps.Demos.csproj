@@ -133,6 +133,7 @@
     <Content Include="Others\DataSources.aspx" />
     <Content Include="Others\GenericAdd.aspx" />
     <Content Include="Others\PostBack.aspx" />
+    <Content Include="Others\UpdatePanels.aspx" />
     <Content Include="Utility\Carousel.aspx" />
     <Content Include="Utility\Clustered.aspx" />
     <Content Include="Utility\ClusteredPlus.aspx" />
@@ -601,6 +602,13 @@
     </Compile>
     <Compile Include="Others\PostBack.aspx.designer.cs">
       <DependentUpon>PostBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\UpdatePanels.aspx.cs">
+      <DependentUpon>UpdatePanels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\UpdatePanels.aspx.designer.cs">
+      <DependentUpon>UpdatePanels.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\Carousel.aspx.cs">

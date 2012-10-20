@@ -177,6 +177,7 @@
 		            <li><a runat="server" href="~/Others/Bounds.aspx">GLatLngBounds</a></li>
 		            <li><a runat="server" href="~/Others/DataSources.aspx">Datasource</a></li>
 		            <li><a runat="server" href="~/Others/PostBack.aspx">PostBack support</a></li>
+                    <li><a runat="server" href="~/Others/UpdatePanels.aspx">UpdatePanel support</a></li>
 		            <%--<li><a runat="server" href="~/Others/AdsManager.aspx">GAdsManager</a></li>--%>
                 </ol>
             </li>
