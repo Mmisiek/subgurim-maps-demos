@@ -14,8 +14,6 @@ namespace GMaps.Demos.Others
 
         }
 
-        private int count = 0;
-
         protected void OnTimerTick(object sender, EventArgs e)
         {
             Panel1.Update();
