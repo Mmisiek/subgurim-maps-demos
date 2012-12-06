@@ -19,11 +19,9 @@ namespace Demos.Geo
                 direction.buttonElementId = "bt_Go";
                 direction.fromElementId = tb_fromPoint.ClientID;
                 direction.toElementId = tb_endPoint.ClientID;
-                direction.divElementId = "div_directions"; direction.clearMap = true;
-
-
-                // Optional
-                // direction.locale = "es-ES";
+                direction.divElementId = "div_directions"; 
+                direction.clearMap = true;
+                direction.travelMode = GDirection.GTravelModeEnum.G_TRAVEL_MODE_DRIVING;
 
                 GMap1.Add(direction);
             }

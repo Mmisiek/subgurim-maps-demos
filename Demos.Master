@@ -144,8 +144,8 @@
 		            <li><a runat="server" href="~/Geo/Inverse.aspx">Inverse Geocoding</a></li>
 		            <%--<li><a runat="server" href="~/Geo/GeoXml.aspx">GGeoXml</a></li>--%>
 		            <%--<li><a runat="server" href="~/Geo/Traffic.aspx">Traffic</a></li>--%>
-		            <%--<li><a runat="server" href="~/Geo/Directions.aspx">GDirection</a></li>--%>
-		            <%--<li><a runat="server" href="~/Geo/Directions2.aspx">GDirections Advanced</a></li>--%>
+		            <li><a runat="server" href="~/Geo/Directions.aspx">Directions</a></li>
+		            <li><a runat="server" href="~/Geo/Directions2.aspx">Directions Advanced</a></li>
 		            <%--<li><a runat="server" href="~/Geo/GeoIP.aspx">GeoIP</a></li>--%>
                 </ol>
             </li>
