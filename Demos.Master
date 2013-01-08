@@ -77,7 +77,7 @@
             <li>Controls and overlays
                 <ol>
 		            <li><a runat="server" href="~/Controls/MapOptions.aspx">GMapUI</a></li>
-                    <%--Obsolete: <li><a runat="server" href="~/Controls/PreBuilt.aspx">PreBuilt Controls</a></li>--%>
+                    <li><a runat="server" href="~/Controls/PreBuilt.aspx">PreBuilt Controls</a></li>
 		            <li><a runat="server" href="~/Controls/Extras.aspx">Extra Controls</a></li>
 		            <li><a runat="server" href="~/Controls/Lines.aspx">Lines</a></li>
 		            <li><a runat="server" href="~/Controls/Polygons.aspx">Polygons</a></li>
