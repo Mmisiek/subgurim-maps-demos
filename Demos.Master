@@ -159,7 +159,7 @@
 		            <%--<li><a runat="server" href="~/Utility/Carousel.aspx">CarouselMapType</a></li>--%>
 		            <%--<li><a runat="server" href="~/Utility/Menu.aspx">ContextMenu Control</a></li>--%>
 		            <%--<li><a runat="server" href="~/Utility/StreetView.aspx">ExtStreeview Control</a></li>--%>
-		            <%--<li><a runat="server" href="~/Utility/KeyDrag.aspx">KeyDrag Zoom</a></li>--%>
+		            <li><a runat="server" href="~/Utility/KeyDrag.aspx">KeyDrag Zoom</a></li>
 		            <li><a runat="server" href="~/Utility/Clustered.aspx">Marker Clusterer</a></li>
                     <li><a runat="server" href="~/Utility/ClusteredPlus.aspx">Marker Clusterer Plus</a></li>
 		            <%--<li><a runat="server" href="~/Utility/Popup.aspx">Popup Maker</a></li>--%>
