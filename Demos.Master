@@ -41,21 +41,38 @@
         li.deleted {
             text-decoration: line-through;
         }
+
+        #error-message {
+             display: none;
+             position: absolute;
+            right: 0;
+            margin-right: 20px;
+            background-color: #f22;
+            padding: 5px;
+            font-weight: bold;
+            color: white;
+        }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('a').each(function () {
+        $(document).ready(function() {
+            $('a').each(function() {
                 if (location.href.indexOf($(this).attr('href')) > -1) {
                     $(this).wrap('<b />');
                 }
             });
+            $(window).error(function(e) {
+                $('#error-message').show().text("ERROR: " + e.originalEvent.message);
+            });
         });
+
+
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <span id="error-message">error</span>
     <h1>Subgurim Maps Demo</h1>
     <form id="form1" runat="server">
     <div class="menu">
