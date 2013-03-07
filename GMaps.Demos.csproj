@@ -120,6 +120,7 @@
     <Content Include="JsEvents\Server.aspx" />
     <Content Include="JsEvents\Server2.aspx" />
     <Content Include="JsEvents\Store.aspx" />
+    <Content Include="Maps\Styled.aspx" />
     <Content Include="Maps\Custom.aspx" />
     <Content Include="Maps\Earth.aspx" />
     <Content Include="Maps\Mars.aspx" />
@@ -514,6 +515,13 @@
     <Compile Include="JsEvents\Store.aspx.designer.cs">
       <DependentUpon>Store.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Maps\Styled.aspx.cs">
+      <DependentUpon>Styled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps\Styled.aspx.designer.cs">
+      <DependentUpon>Styled.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Maps\Custom.aspx.cs">
       <DependentUpon>Custom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -755,6 +763,9 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -767,8 +778,8 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>14560</DevelopmentServerPort>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1901</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:49357/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
