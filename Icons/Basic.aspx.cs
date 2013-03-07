@@ -35,7 +35,7 @@ namespace Demos.Icons
             markerDraggable.options = mOpts;
             // string jsStart = "function() {" + GMap1.GMap_Id + ".closeInfoWindow();}";
             // string jsEnd = "function() {" + markerDraggable.ID + ".openInfoWindowHtml('<a href=\"http://www.playsudoku.biz\" target=\"_blank\">Play Sudoku</a>');}";
-            string jsStart = "function() { if (myInfoWindow) {myInfoWindow.close(); } }";
+            string jsStart = "function() { if (typeof variable !== myInfoWindow) {myInfoWindow.close(); } }";
             string jsEnd = "function() { myInfoWindow = new google.maps.InfoWindow({ content: '<a href=\"http://www.playsudoku.biz\" target=\"_blank\">Play Sudoku</a>' }); myInfoWindow.open(" + GMap1.GMap_Id + "," + markerDraggable.ID + "); }";
             GMap1.Add(new GListener(markerDraggable.ID, GListener.Event.dragstart, jsStart));
             GMap1.Add(new GListener(markerDraggable.ID, GListener.Event.dragend, jsEnd));
