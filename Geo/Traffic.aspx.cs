@@ -12,8 +12,9 @@ namespace Demos.Geo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GMap1.setCenter(new GLatLng(42, -95), 3);
+            GMap1.setCenter(new GLatLng(40.7, -74), 12);
             GMap1.enableGTrafficOverlay = true;
+            GMap1.enableTransitOverlay = true;
         }
     }
 }
