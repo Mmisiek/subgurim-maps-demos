@@ -1,6 +1,5 @@
 ﻿using System;
 using Subgurim.Controles;
-using Subgurim.Controles.Core.Utilities;
 
 namespace Demos.Utility
 {
